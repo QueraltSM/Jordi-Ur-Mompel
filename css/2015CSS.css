@@ -1,0 +1,273 @@
+.fade-in {
+animation: fadeIn 3s;
+
+
+}
+
+
+.background {
+position:absolute;
+z-index:0;
+opacity: 0.4;
+filter: alpha(opacity=50);
+left: 0px;
+top: 0px;
+}
+
+
+
+@keyframes fadeIn {
+
+from {
+opacity: 0;
+
+}
+
+to {
+opacity: 1;
+
+}
+
+}
+
+
+.t1 {
+position: absolute;
+left: 700px;
+top: 180px;
+
+
+}
+
+.t1Info {
+text-align: center;
+position: absolute;
+background: #FDD3FF;
+color: #3A003F;
+border:1px solid #3A003F;
+left: 750px;
+top: 250px;
+font-family:"Times New Roman", Times, serif;
+
+
+}
+
+
+
+
+.t2 {
+position: absolute;
+left: 250px;
+top: 280px;
+
+}
+
+.t2Info {
+background: #FDD3FF;
+color: #3A003F;
+border:1px solid #3A003F;
+text-align: center;
+position: absolute;
+left: 290px;
+top: 350px;
+font-family:"Times New Roman", Times, serif;
+
+}
+
+
+.t3 {
+position: absolute;
+left: 700px;
+top: 490px;
+
+
+}
+
+.t3Info {
+background: #FDD3FF;
+color: #3A003F;
+border:1px solid #3A003F;
+text-align: center;
+position: absolute;
+left: 860px;
+top: 570px;
+font-family:"Times New Roman", Times, serif;
+
+}
+
+
+
+
+
+.t4 {
+position: absolute;
+left: 330px;
+top: 650px;
+
+
+}
+
+.t4Info {
+background: #FDD3FF;
+color: #3A003F;
+border:1px solid #3A003F;
+text-align: center;
+position: absolute;
+left: 320px;
+top: 720px;
+font-family:"Times New Roman", Times, serif;
+
+}
+
+
+
+
+
+.t5 {
+position: absolute;
+left: 800px;
+top: 900px;
+
+}
+
+.t5Info {
+background: #FDD3FF;
+color: #3A003F;
+border:1px solid #3A003F;
+text-align: center;
+position: absolute;
+left: 810px;
+top: 1010px;
+font-family:"Times New Roman", Times, serif;
+
+}
+
+
+
+
+.t6 {
+position: absolute;
+left: 200px;
+top: 1100px;
+
+}
+
+.t6Info {
+background: #FDD3FF;
+color: #3A003F;
+border:1px solid #3A003F;
+text-align: center;
+position: absolute;
+left: 240px;
+top: 1180px;
+font-family:"Times New Roman", Times, serif;
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenu {
+  width: 100%;
+  height: 49px;	
+}
+
+#cssmenu ul {
+  /*content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;*/
+
+}
+#cssmenu ul li {
+  float: right;
+  display: block;
+  padding: 0;
+
+}
+#cssmenu ul li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  border-bottom:10px solid #000 ;
+}
+.last {
+float:right;
+padding-left:60px;
+font-style:italic;}
+
+
+#cssmenu ul li a:hover {
+  color: #000;
+  border-color:#EAAEEC;
+
+}
+#cssmenu ul li a:hover:before {
+  /*width: 50%;*/
+  border-color:#FF5DFF;
+}
+#cssmenu ul li a:after {
+  /*content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;*/
+}
+#cssmenu ul li a:before {
+ /* content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;*/
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+  #cssmenu ul li.last > a:before,
+  #cssmenu ul li:last-child > a:before {
+    display: none;
+  }
+}
